@@ -6101,16 +6101,6 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D1" library="diode" package="SMB" value="SS12B" x="10.4775" y="51.1175" smashed="yes" rot="MR0">
 <attribute name="NAME" x="11.049" y="47.5615" size="1.27" layer="26" rot="MR0"/>
 </element>
-<element name="Q5" library="transistor-npn" package="SOT23" value="BC847CSMD" x="0.3175" y="-7.62">
-<attribute name="MPN" value="BC848C-7-F" x="0.3175" y="-7.62" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="DIODES INC." x="0.3175" y="-7.62" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1773621" x="0.3175" y="-7.62" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R8" library="rcl" package="R0805" value="1k" x="0" y="-14.2875">
-<attribute name="MPN" value="ERJU06F1001V" x="0" y="-14.2875" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="PANASONIC" x="0" y="-14.2875" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="2145438" x="0" y="-14.2875" size="1.778" layer="27" display="off"/>
-</element>
 </elements>
 <signals>
 <signal name="SOIL_PROBE_A">

@@ -18469,16 +18469,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </part>
 <part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="SMB" value="SS12B"/>
-<part name="Q5" library="transistor-npn" deviceset="BC847*" device="SMD" technology="C">
-<attribute name="MF" value="DIODES INC."/>
-<attribute name="MPN" value="BC848C-7-F"/>
-<attribute name="OC_FARNELL" value="1773621"/>
-</part>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1k">
-<attribute name="MF" value="PANASONIC"/>
-<attribute name="MPN" value="ERJU06F1001V"/>
-<attribute name="OC_FARNELL" value="2145438"/>
-</part>
 </parts>
 <sheets>
 <sheet>
@@ -18578,16 +18568,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </instance>
 <instance part="F1" gate="G$1" x="-35.56" y="88.9"/>
 <instance part="D1" gate="G$1" x="-22.86" y="76.2" rot="R90"/>
-<instance part="Q5" gate="G$1" x="27.94" y="22.86">
-<attribute name="OC_FARNELL" x="27.94" y="22.86" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="27.94" y="22.86" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="27.94" y="22.86" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R8" gate="G$1" x="30.48" y="55.88" rot="R90">
-<attribute name="OC_FARNELL" x="30.48" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="30.48" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="30.48" y="55.88" size="1.778" layer="96" display="off"/>
-</instance>
 </instances>
 <busses>
 </busses>
