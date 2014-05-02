@@ -1,4 +1,4 @@
-SoilMoistureMan
+Soil Moisture Man [WIP - NOT TESTED]
 ===============
 
 Soil moisture sensor CAD files using Eagle CAD free edition
