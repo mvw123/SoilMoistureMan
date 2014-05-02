@@ -1,0 +1,229 @@
+******************************************************************************************************************************************************
+***                                                                                                                                                ***
+*** SIMetrix/SIMPLIS Intro Version 7.10m (x86) - 02/05/2014 21:01:33                                                                               ***
+*** Platform: Windows XP                                                                                                                           ***
+*** Architecture: x86                                                                                                                              ***
+*** Serial Number:                                                                                                                                 ***
+*** User:                                                                                                                                          ***
+***                                                                                                                                                ***
+*** TITLE:   * C:\Documents and Settings\Michael Walsh\My Documents\GitHub\SoilMoistureMan\Simulations\SoilMoisture_AstableMultivibrator_V006.sxsch***
+*** NETLIST: C:\Documents and Settings\Michael Walsh\My Documents\GitHub\SoilMoistureMan\Simulations\design.net                                    ***
+***                                                                                                                                                ***
+******************************************************************************************************************************************************
+
+********************************************************************************
+***                                                                          ***
+***                                Input Deck                                ***
+***                                                                          ***
+********************************************************************************
+
+#SIMETRIX
+V1 VCC 0 3
+R1 VCC R1_N 1K
+R2 VCC R2_N 100k
+R3 VCC R3_N 100k
+R4 VCC OUT_N 1k
+R5 R5_P R9_N 1k
+R6 VCC R6_N 4.7k
+R7 D6_N R7_N 470
+R8 R5_P 0 220k
+R9 OUT_N R9_N 10k
+D4 D5_N D4_N D1N4148
+D5 VCC D5_N D1N4148
+D6 D4_N D6_N D1N4148
+Q1 R1_N R3_N 0 0 QBC847C/PS
+Q2 OUT_N R2_N 0 0 QBC847C/PS
+Q3 R6_N R5_P 0 0 QBC847C/PS
+Q4 R7_N R6_N 0 0 QBC847C/PS
+C1 R2_N R1_N 100u  
+C2 OUT_N R3_N 10u IC=0  BRANCH={IF(ANALYSIS=2,1,0)}
+.GRAPH R5_P axisType="auto" persistence=-1 curveLabel="Q3-base" xLog="auto" yLog="auto"  nowarn=true' 
+.GRAPH OUT_N axisType="auto" persistence=-1 curveLabel="ASTABLE_OUT" xLog="auto" yLog="auto"  nowarn=true' 
+.GRAPH R7_N curveLabel= LED_OUT nowarn=true ylog=auto xlog=auto 
+.TRAN 2m 10
+.MODEL QBC847C/PS NPN(
++     IS = 2.375E-14 
++     NF = 0.9925 
++     ISE = 5.16E-16 
++     NE = 1.3 
++     BF = 524.9 
++     IKF = 0.09 
++     VAF = 49.77 
++     NR = 0.9931 
++     ISC = 7.064E-12 
++     NC = 1.78 
++     BR = 10.04 
++     IKR = 0.132 
++     VAR = 16 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.653 
++     RC = 0.78 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.132E-11 
++     VJE = 0.7685 
++     MJE = 0.3733 
++     TF = 4.258E-10 
++     XTF = 6.319 
++     VTF = 6.4 
++     ITF = 0.1845 
++     PTF = 0 
++     CJC = 3.379E-12 
++     VJC = 0.5444 
++     MJC = 0.3968 
++     XCJC = 0.6193 
++     TR = 9.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     FC = 0.999) 
+*
+*
+* File: BC847CT.PRM
+*
+*
+.model D1n4148 D(IS=1.6f RS=1.0 IKF=22m CJO=3p M=0.3 VJ=0.75 ISR=2.6n 
++ BV=70 TT=20n)
+**************************************************************************
+* jrw 17.2.94.
+* bav18, bav19, bav20, bav21 - DO-35
+* bas19, bas20, bas21 - SOT23
+* bav100, bav101, bav102, bav103 -SOD80C
+* Data from Philips SC01 1992
+
+********************************************************************************
+***                                                                          ***
+*** Starting Transient analysis at 21:01:33                                  ***
+***                                                                          ***
+*** Analysis card: .TRAN 2m 10                                               ***
+***                                                                          ***
+********************************************************************************
+********************************************************************************
+***                                                                          ***
+***                            Simulation Options                            ***
+***                                                                          ***
+********************************************************************************
+RELTOL                    0.001
+ABSTOL                    1e-012
+VNTOL                     1e-006
+POINTTOL                  0.001
+TEMPERATURE               27C
+GMIN                      1e-012
+Matrix Solver             UF KLU Version 1.1
+
+
+
+********************************************************************************
+***                                                                          ***
+***                             Device parameters                            ***
+***                                                                          ***
+********************************************************************************
+Model parameters for devices of type BJT
+========================================
+Model:       QBC847C/PS   
+
+bf           524.9        
+br           10.04        
+cjc          3.379p       
+cje          11.32p       
+cjs          0            
+eg           1.11         
+fc           999m         
+ikf          90m          
+ikr          132m         
+irb          5u           
+is           23.75f       
+isc          7.064p       
+ise          516a         
+itf          184.5m       
+mjc          396.8m       
+mje          373.3m       
+mjs          333m         
+nc           1.78         
+ne           1.3          
+nf           992.5m       
+nr           993.1m       
+ptf          0            
+rb           10           
+rbm          5            
+rc           780m         
+re           653m         
+tf           425.8p       
+tr           95n          
+vaf          49.77        
+var          16           
+vjc          544.4m       
+vje          768.5m       
+vjs          750m         
+vtf          6.4          
+xcjc         619.3m       
+xtb          0            
+xtf          6.319        
+xti          3            
+
+
+Model parameters for devices of type Diode
+==========================================
+Model:       D1N4148      
+
+bv           70           
+cjo          3p           
+ikf          22m          
+is           1.6f         
+isr          2.6n         
+m            300m         
+rs           1            
+tt           20n          
+vj           750m         
+
+
+Instance parameters for devices of type Capacitor
+=================================================
+Instance:    C2           
+Using model: $Capacitor   
+
+branch       1            
+
+
+Analysis statistics
+===================
+
+Nominal temperature = 27
+Operating temperature = 27
+Total iterations = 3977
+Transient iterations = 3963
+Transient timepoints = 482
+Accepted timepoints = 399
+Total analysis time = 0.25
+Transient time = 0
+Matrix reordering time = 0
+L-U decomposition time = 0
+Matrix solve time = 0
+Load time = 0
+Transient L-U decomp time = 0
+Transient solve time = 0
+Circuit build time = 0.03
+Simulator initialise time = 0
+Data write time = 0
+Convergence test time = 0
+LTE time = 0
+JI2 Iterations = 14
+Diag. GMIN stepping iterations = 0
+Junc. GMIN stepping iterations = 0
+Source stepping iterations = 0
+PTA iterations = 0
+Number of matrix fill ins = -5
+Number of initial matrix elements = 112
+Circuit equations = 30
+State vector size = 120
+Number of write buffer faults = 0
+
+Run statistics
+==============
+
+Netlist read in time = 0.01
+Total run time = 0.401 seconds
+Analysis concluded 02/05/2014 21:01:33
