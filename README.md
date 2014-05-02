@@ -2,6 +2,7 @@ SoilMoistureMan
 ===============
 
 Soil moisture sensor CAD files using Eagle CAD free edition
+Simulation files in Simetrix (windows only) http://www.simetrix.co.uk/site/index.html
 
 The Soil Moisture Man is an educational "open source hardware" project which allows you flash warning LEDs when your plants soil becomes dry. 
 This stops you under-watering and killing your plants. 
@@ -16,7 +17,7 @@ You do this by :-
 * Turn VR1 until the LEDs just start to flash consistently. 
 
 
-CAD B [NOT TESTED] 
+CAD B [WIP - NOT TESTED] 
 =====
 
 Changed the circuit around from CAD A. 
@@ -24,7 +25,7 @@ The Astable multivibrator is turned on by the soil moisture sensor transistor.
 This saves some small amounts of power and thus increases the battery life.
 BOM parts updated and new VR1 chosen
 
-CAD A [NOT TESTED] 
+CAD A [WIP - NOT TESTED] 
 =====
 
 Initial schematic release.
