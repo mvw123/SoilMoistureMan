@@ -1,7 +1,7 @@
 Soil Moisture Man [WIP - NOT TESTED]
 ===============
 
-Soil moisture sensor CAD files using Eagle CAD free edition
+Soil moisture sensor CAD files using Eagle CAD free edition. 
 Simulation files in Simetrix (windows only) http://www.simetrix.co.uk/site/index.html
 
 The Soil Moisture Man is an educational "open source hardware" project which allows you flash warning LEDs when your plants soil becomes dry. 
