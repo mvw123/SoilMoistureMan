@@ -1,26 +1,22 @@
-* C:\Documents and Settings\Michael Walsh\My Documents\GitHub\SoilMoistureMan\Simulations\SoilMoisture_AstableMultivibrator_V006.sxsch
+* C:\Documents and Settings\Michael Walsh\My Documents\GitHub\SoilMoistureMan\Simulations\SoilMoisture_AstableMultivibrator_PNP_V007.sxsch
 *#SIMETRIX
 V1 VCC 0 3
-R1 VCC R1_N 1K
-R2 VCC R2_N 100k
-R3 VCC R3_N 100k
-R4 VCC OUT_N 1k
-R5 R5_P R9_N 1k
-R6 VCC R6_N 4.7k
-R7 D6_N R7_N 470
-R8 R5_P 0 220k
-R9 OUT_N R9_N 10k
-D4 D5_N D4_N D1N4148
-D5 VCC D5_N D1N4148
-D6 D4_N D6_N D1N4148
+R1 Q4_C R1_N 1K
+R2 Q4_C R2_N 100k
+R3 Q4_C R3_N 100k
+R4 Q4_C R4_N 1k
+R5 VCC R5_N 600k
+R6 VCC R6_N 100k
+R8 R5_N 0 100k
+R9 VCC R9_N 100k
+R10 Q4_B R9_N 10k
 Q1 R1_N R3_N 0 0 QBC847C/PS
-Q2 OUT_N R2_N 0 0 QBC847C/PS
-Q3 R6_N R5_P 0 0 QBC847C/PS
-Q4 R7_N R6_N 0 0 QBC847C/PS
+Q2 R4_N R2_N 0 0 QBC847C/PS
+Q3 R6_N R5_N 0 0 Q2N2222
+Q4 Q4_C Q4_B VCC 0 Q2N2904
+Q5 R9_N R6_N 0 0 Q2N2222
 C1 R2_N R1_N 100u  
-C2 OUT_N R3_N 10u IC=0  BRANCH={IF(ANALYSIS=2,1,0)}
-.GRAPH R5_P axisType="auto" persistence=-1 curveLabel="Q3-base" xLog="auto" yLog="auto"  nowarn=true' 
-.GRAPH OUT_N axisType="auto" persistence=-1 curveLabel="ASTABLE_OUT" xLog="auto" yLog="auto"  nowarn=true' 
-.GRAPH R7_N curveLabel= LED_OUT nowarn=true ylog=auto xlog=auto 
+C2 R4_N R3_N 10u IC=0  BRANCH={IF(ANALYSIS=2,1,0)}
+.GRAPH Q4_C axisType="auto" persistence=-1 curveLabel="ASTABLE_PWR" xLog="auto" yLog="auto"  nowarn=true' 
 .TRAN 2m 10
 

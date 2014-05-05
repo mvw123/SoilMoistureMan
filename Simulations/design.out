@@ -1,15 +1,15 @@
-******************************************************************************************************************************************************
-***                                                                                                                                                ***
-*** SIMetrix/SIMPLIS Intro Version 7.10m (x86) - 02/05/2014 21:01:33                                                                               ***
-*** Platform: Windows XP                                                                                                                           ***
-*** Architecture: x86                                                                                                                              ***
-*** Serial Number:                                                                                                                                 ***
-*** User:                                                                                                                                          ***
-***                                                                                                                                                ***
-*** TITLE:   * C:\Documents and Settings\Michael Walsh\My Documents\GitHub\SoilMoistureMan\Simulations\SoilMoisture_AstableMultivibrator_V006.sxsch***
-*** NETLIST: C:\Documents and Settings\Michael Walsh\My Documents\GitHub\SoilMoistureMan\Simulations\design.net                                    ***
-***                                                                                                                                                ***
-******************************************************************************************************************************************************
+**********************************************************************************************************************************************************
+***                                                                                                                                                    ***
+*** SIMetrix/SIMPLIS Intro Version 7.10m (x86) - 05/05/2014 20:21:28                                                                                   ***
+*** Platform: Windows XP                                                                                                                               ***
+*** Architecture: x86                                                                                                                                  ***
+*** Serial Number:                                                                                                                                     ***
+*** User:                                                                                                                                              ***
+***                                                                                                                                                    ***
+*** TITLE:   * C:\Documents and Settings\Michael Walsh\My Documents\GitHub\SoilMoistureMan\Simulations\SoilMoisture_AstableMultivibrator_PNP_V007.sxsch***
+*** NETLIST: C:\Documents and Settings\Michael Walsh\My Documents\GitHub\SoilMoistureMan\Simulations\design.net                                        ***
+***                                                                                                                                                    ***
+**********************************************************************************************************************************************************
 
 ********************************************************************************
 ***                                                                          ***
@@ -19,27 +19,23 @@
 
 #SIMETRIX
 V1 VCC 0 3
-R1 VCC R1_N 1K
-R2 VCC R2_N 100k
-R3 VCC R3_N 100k
-R4 VCC OUT_N 1k
-R5 R5_P R9_N 1k
-R6 VCC R6_N 4.7k
-R7 D6_N R7_N 470
-R8 R5_P 0 220k
-R9 OUT_N R9_N 10k
-D4 D5_N D4_N D1N4148
-D5 VCC D5_N D1N4148
-D6 D4_N D6_N D1N4148
+R1 Q4_C R1_N 1K
+R2 Q4_C R2_N 100k
+R3 Q4_C R3_N 100k
+R4 Q4_C R4_N 1k
+R5 VCC R5_N 600k
+R6 VCC R6_N 100k
+R8 R5_N 0 100k
+R9 VCC R9_N 100k
+R10 Q4_B R9_N 10k
 Q1 R1_N R3_N 0 0 QBC847C/PS
-Q2 OUT_N R2_N 0 0 QBC847C/PS
-Q3 R6_N R5_P 0 0 QBC847C/PS
-Q4 R7_N R6_N 0 0 QBC847C/PS
+Q2 R4_N R2_N 0 0 QBC847C/PS
+Q3 R6_N R5_N 0 0 Q2N2222
+Q4 Q4_C Q4_B VCC 0 Q2N2904
+Q5 R9_N R6_N 0 0 Q2N2222
 C1 R2_N R1_N 100u  
-C2 OUT_N R3_N 10u IC=0  BRANCH={IF(ANALYSIS=2,1,0)}
-.GRAPH R5_P axisType="auto" persistence=-1 curveLabel="Q3-base" xLog="auto" yLog="auto"  nowarn=true' 
-.GRAPH OUT_N axisType="auto" persistence=-1 curveLabel="ASTABLE_OUT" xLog="auto" yLog="auto"  nowarn=true' 
-.GRAPH R7_N curveLabel= LED_OUT nowarn=true ylog=auto xlog=auto 
+C2 R4_N R3_N 10u IC=0  BRANCH={IF(ANALYSIS=2,1,0)}
+.GRAPH Q4_C axisType="auto" persistence=-1 curveLabel="ASTABLE_PWR" xLog="auto" yLog="auto"  nowarn=true' 
 .TRAN 2m 10
 .MODEL QBC847C/PS NPN(
 +     IS = 2.375E-14 
@@ -85,18 +81,21 @@ C2 OUT_N R3_N 10u IC=0  BRANCH={IF(ANALYSIS=2,1,0)}
 * File: BC847CT.PRM
 *
 *
-.model D1n4148 D(IS=1.6f RS=1.0 IKF=22m CJO=3p M=0.3 VJ=0.75 ISR=2.6n 
-+ BV=70 TT=20n)
-**************************************************************************
-* jrw 17.2.94.
-* bav18, bav19, bav20, bav21 - DO-35
-* bas19, bas20, bas21 - SOT23
-* bav100, bav101, bav102, bav103 -SOD80C
-* Data from Philips SC01 1992
+.model Q2N2904 pnp ( IS=3.58E-14 VAF=26.4 BF=120 IKF=0.3416 NE=1.2861
++    ISE=9.574E-14 IKR=0.03 ISC=2.00E-12 NC=1.2 NR=1 BR=5 RC=0.4 CJC=1.80E-11
++    FC=0.5 MJC=0.45 VJC=0.8 CJE=2.65E-11 MJE=0.33 VJE=0.75 TF=4.10E-10
++    ITF=0.54 VTF=3 XTF=20 RE=1.4 TR=8.00E-08)
+*From Philips small-signal transistors sc04 1991.
+* FT vs Ic estimated (ITF,XTF,XTF) no data available
+.model Q2N2222 npn ( IS=2.48E-13 VAF=73.9 BF=400 IKF=0.1962 NE=1.2069
++    ISE=3.696E-14 IKR=0.02 ISC=5.00E-09 NC=2 NR=1 BR=5 RC=0.3 CJC=7.00E-12
++    FC=0.5 MJC=0.5 VJC=0.5 CJE=1.80E-11 MJE=0.5 VJE=1 TF=4.00E-10
++    ITF=2 VTF=10 XTF=10 RE=0.4 TR=4.00E-08)
+* 2N2222 with less gain
 
 ********************************************************************************
 ***                                                                          ***
-*** Starting Transient analysis at 21:01:33                                  ***
+*** Starting Transient analysis at 20:21:28                                  ***
 ***                                                                          ***
 *** Analysis card: .TRAN 2m 10                                               ***
 ***                                                                          ***
@@ -123,61 +122,46 @@ Matrix Solver             UF KLU Version 1.1
 ********************************************************************************
 Model parameters for devices of type BJT
 ========================================
-Model:       QBC847C/PS   
+Model:       Q2N2222      Q2N2904      QBC847C/PS   
 
-bf           524.9        
-br           10.04        
-cjc          3.379p       
-cje          11.32p       
-cjs          0            
-eg           1.11         
-fc           999m         
-ikf          90m          
-ikr          132m         
-irb          5u           
-is           23.75f       
-isc          7.064p       
-ise          516a         
-itf          184.5m       
-mjc          396.8m       
-mje          373.3m       
-mjs          333m         
-nc           1.78         
-ne           1.3          
-nf           992.5m       
-nr           993.1m       
-ptf          0            
-rb           10           
-rbm          5            
-rc           780m         
-re           653m         
-tf           425.8p       
-tr           95n          
-vaf          49.77        
-var          16           
-vjc          544.4m       
-vje          768.5m       
-vjs          750m         
-vtf          6.4          
-xcjc         619.3m       
-xtb          0            
-xtf          6.319        
-xti          3            
-
-
-Model parameters for devices of type Diode
-==========================================
-Model:       D1N4148      
-
-bv           70           
-cjo          3p           
-ikf          22m          
-is           1.6f         
-isr          2.6n         
-m            300m         
-rs           1            
-tt           20n          
-vj           750m         
+bf           400          120          524.9        
+br           5            5            10.04        
+cjc          7p           18p          3.379p       
+cje          18p          26.5p        11.32p       
+cjs          0            0            0            
+eg           0            0            1.11         
+fc           500m         500m         999m         
+ikf          196.2m       341.6m       90m          
+ikr          20m          30m          132m         
+irb          0            0            5u           
+is           248f         35.8f        23.75f       
+isc          5n           2p           7.064p       
+ise          36.96f       95.74f       516a         
+itf          2            540m         184.5m       
+mjc          500m         450m         396.8m       
+mje          500m         330m         373.3m       
+mjs          0            0            333m         
+nc           2            1.2          1.78         
+ne           1.2069       1.2861       1.3          
+nf           0            0            992.5m       
+nr           1            1            993.1m       
+ptf          0            0            0            
+rb           0            0            10           
+rbm          0            0            5            
+rc           300m         400m         780m         
+re           400m         1.4          653m         
+tf           400p         410p         425.8p       
+tr           40n          80n          95n          
+vaf          73.9         26.4         49.77        
+var          0            0            16           
+vjc          500m         800m         544.4m       
+vje          1            750m         768.5m       
+vjs          0            0            750m         
+vtf          10           3            6.4          
+xcjc         0            0            619.3m       
+xtb          0            0            0            
+xtf          10           20           6.319        
+xti          0            0            3            
 
 
 Instance parameters for devices of type Capacitor
@@ -193,11 +177,11 @@ branch       1
 
 Nominal temperature = 27
 Operating temperature = 27
-Total iterations = 3977
-Transient iterations = 3963
-Transient timepoints = 482
-Accepted timepoints = 399
-Total analysis time = 0.25
+Total iterations = 4730
+Transient iterations = 4717
+Transient timepoints = 843
+Accepted timepoints = 777
+Total analysis time = 0.211
 Transient time = 0
 Matrix reordering time = 0
 L-U decomposition time = 0
@@ -210,20 +194,20 @@ Simulator initialise time = 0
 Data write time = 0
 Convergence test time = 0
 LTE time = 0
-JI2 Iterations = 14
+JI2 Iterations = 13
 Diag. GMIN stepping iterations = 0
 Junc. GMIN stepping iterations = 0
 Source stepping iterations = 0
 PTA iterations = 0
-Number of matrix fill ins = -5
-Number of initial matrix elements = 112
-Circuit equations = 30
-State vector size = 120
+Number of matrix fill ins = 1
+Number of initial matrix elements = 97
+Circuit equations = 25
+State vector size = 118
 Number of write buffer faults = 0
 
 Run statistics
 ==============
 
-Netlist read in time = 0.01
-Total run time = 0.401 seconds
-Analysis concluded 02/05/2014 21:01:33
+Netlist read in time = 0.02
+Total run time = 0.341 seconds
+Analysis concluded 05/05/2014 20:21:28
