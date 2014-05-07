@@ -352,7 +352,7 @@ UsedLibrary="kzh20_lithium_batterie_holder.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="106 22 946 772"
+Loc="353 22 1193 772"
 State=2
 Number=0
 

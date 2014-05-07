@@ -10061,58 +10061,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </library>
 <library name="adafruit">
 <packages>
-<package name="CR1220-SMD">
-<wire x1="-9.84" y1="-1.64" x2="-6.66" y2="-1.64" width="0.127" layer="21"/>
-<wire x1="-6.66" y1="-1.64" x2="-6.66" y2="-3.672" width="0.127" layer="21"/>
-<wire x1="-6.66" y1="-3.672" x2="-3.826" y2="-6.66" width="0.127" layer="21"/>
-<wire x1="-3.826" y1="-6.66" x2="3.98" y2="-6.66" width="0.127" layer="21"/>
-<wire x1="3.98" y1="-6.66" x2="6.66" y2="-3.826" width="0.127" layer="21"/>
-<wire x1="6.66" y1="-3.826" x2="6.66" y2="-1.54" width="0.127" layer="21"/>
-<wire x1="6.66" y1="-1.54" x2="9.84" y2="-1.54" width="0.127" layer="21"/>
-<wire x1="9.84" y1="-1.54" x2="9.84" y2="1.64" width="0.127" layer="21"/>
-<wire x1="9.84" y1="1.64" x2="6.66" y2="1.64" width="0.127" layer="21"/>
-<wire x1="6.66" y1="1.64" x2="6.66" y2="6.652" width="0.127" layer="21"/>
-<wire x1="6.66" y1="6.652" x2="5.842" y2="6.652" width="0.127" layer="21"/>
-<wire x1="5.842" y1="6.652" x2="3.702" y2="4.404" width="0.127" layer="21"/>
-<wire x1="3.702" y1="4.404" x2="-3.048" y2="4.404" width="0.127" layer="21"/>
-<wire x1="-3.048" y1="4.404" x2="-5.334" y2="6.652" width="0.127" layer="21"/>
-<wire x1="-5.334" y1="6.652" x2="-6.66" y2="6.652" width="0.127" layer="21"/>
-<wire x1="-6.66" y1="6.652" x2="-6.66" y2="1.64" width="0.127" layer="21"/>
-<wire x1="-6.66" y1="1.64" x2="-9.84" y2="1.64" width="0.127" layer="21"/>
-<wire x1="-9.84" y1="1.64" x2="-9.84" y2="-1.64" width="0.127" layer="21"/>
-<circle x="-8.254" y="0" radius="0.9158" width="0.127" layer="21"/>
-<circle x="8.4" y="0.154" radius="0.9158" width="0.127" layer="21"/>
-<smd name="-" x="0" y="0" dx="3.9" dy="3.9" layer="1"/>
-<smd name="+$1" x="-8.2" y="0" dx="3.2" dy="3.2" layer="1"/>
-<smd name="+$2" x="8.2" y="0" dx="3.2" dy="3.2" layer="1"/>
-<text x="-3.556" y="5.602" size="1.6764" layer="25" font="vector">&gt;NAME</text>
-<text x="-4.318" y="-4.55" size="1.6764" layer="27" font="vector">&gt;VALUE</text>
-</package>
-<package name="CR1220-THM">
-<wire x1="-7.554" y1="-1.64" x2="-6.66" y2="-1.64" width="0.127" layer="21"/>
-<wire x1="-6.66" y1="-1.64" x2="-6.66" y2="-3.672" width="0.127" layer="21"/>
-<wire x1="-6.66" y1="-3.672" x2="-3.826" y2="-6.66" width="0.127" layer="21"/>
-<wire x1="-3.826" y1="-6.66" x2="3.98" y2="-6.66" width="0.127" layer="21"/>
-<wire x1="3.98" y1="-6.66" x2="6.66" y2="-3.826" width="0.127" layer="21"/>
-<wire x1="6.66" y1="-3.826" x2="6.66" y2="-1.54" width="0.127" layer="21"/>
-<wire x1="6.66" y1="-1.54" x2="7.554" y2="-1.54" width="0.127" layer="21"/>
-<wire x1="7.554" y1="-1.54" x2="7.554" y2="1.64" width="0.127" layer="21"/>
-<wire x1="7.554" y1="1.64" x2="6.66" y2="1.64" width="0.127" layer="21"/>
-<wire x1="6.66" y1="1.64" x2="6.66" y2="5.636" width="0.127" layer="21"/>
-<wire x1="6.66" y1="5.636" x2="4.826" y2="5.636" width="0.127" layer="21"/>
-<wire x1="4.826" y1="5.636" x2="2.94" y2="3.388" width="0.127" layer="21"/>
-<wire x1="2.94" y1="3.388" x2="-3.048" y2="3.388" width="0.127" layer="21"/>
-<wire x1="-3.048" y1="3.388" x2="-5.334" y2="5.636" width="0.127" layer="21"/>
-<wire x1="-5.334" y1="5.636" x2="-6.66" y2="5.636" width="0.127" layer="21"/>
-<wire x1="-6.66" y1="5.636" x2="-6.66" y2="1.64" width="0.127" layer="21"/>
-<wire x1="-6.66" y1="1.64" x2="-7.554" y2="1.64" width="0.127" layer="21"/>
-<wire x1="-7.554" y1="1.64" x2="-7.554" y2="-1.64" width="0.127" layer="21"/>
-<pad name="-" x="0" y="0" drill="0.8" diameter="3.9624" shape="square"/>
-<pad name="+1" x="-6.604" y="0" drill="2" diameter="3.175"/>
-<pad name="+2" x="6.604" y="0" drill="2" diameter="3.175"/>
-<text x="-3.556" y="5.602" size="1.6764" layer="25" font="vector">&gt;NAME</text>
-<text x="-4.318" y="-4.55" size="1.6764" layer="27" font="vector">&gt;VALUE</text>
-</package>
 <package name="TC33X">
 <wire x1="-1.45" y1="1.75" x2="-1.45" y2="-1.65" width="0.254" layer="51"/>
 <wire x1="-1.45" y1="-1.65" x2="1.45" y2="-1.65" width="0.254" layer="51"/>
@@ -10181,19 +10129,6 @@ chip</description>
 </package>
 </packages>
 <symbols>
-<symbol name="3V">
-<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.635" width="0.4064" layer="94"/>
-<wire x1="0.635" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="2.54" x2="0.635" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="0.635" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<text x="-1.27" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.27" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="-" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="+1" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="TRIMPOT">
 <wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
@@ -10221,38 +10156,6 @@ chip</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CR1220" uservalue="yes">
-<description>&lt;b&gt;CR1216/CR1220/CR1225 12mm 3V lithium coin cell &lt;/b&gt;
-&lt;p&gt;
-Great for battery packup. Both SMT and THM holders. 
-&lt;br&gt;
-Note the THM package has the ground pads on both sides of the PCB so that the masks are the same - this reduces the cost</description>
-<gates>
-<gate name="G$1" symbol="3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMT" package="CR1220-SMD">
-<connects>
-<connect gate="G$1" pin="+" pad="+$1"/>
-<connect gate="G$1" pin="+1" pad="+$2"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="THM" package="CR1220-THM">
-<connects>
-<connect gate="G$1" pin="+" pad="+1"/>
-<connect gate="G$1" pin="+1" pad="+2"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TRIMPOT" prefix="TM" uservalue="yes">
 <description>SMT trimmer potentiometer part number TC33X
 &lt;p&gt;http://www.ladyada.net/library/eagle&lt;/p&gt;</description>
@@ -18497,11 +18400,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="MPN" value="16TZV10M4X6.1"/>
 <attribute name="OC_FARNELL" value="2346364"/>
 </part>
-<part name="BAT1" library="adafruit" deviceset="CR1220" device="SMT" value="CR1220SMD">
-<attribute name="MF" value="KEYSTONE"/>
-<attribute name="MPN" value="3000"/>
-<attribute name="OC_FARNELL" value="1650692"/>
-</part>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" value="GENERIC_0805_SMD_LED">
 <attribute name="MF" value="LUMEX"/>
@@ -18555,7 +18453,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="MPN" value="ERJU06F1001V"/>
 <attribute name="OC_FARNELL" value="2145438"/>
 </part>
-<part name="BAT2" library="kzh20_lithium_batterie_holder" deviceset="2032" device="">
+<part name="BAT1" library="kzh20_lithium_batterie_holder" deviceset="2032" device="">
 <attribute name="MF" value="RENATA"/>
 <attribute name="MPN" value="SMTU 2032-LF"/>
 <attribute name="OC_FARNELL" value="1216354"/>
@@ -18620,11 +18518,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="MF" x="109.22" y="66.04" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="109.22" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="BAT1" gate="G$1" x="-48.26" y="71.12" rot="R90">
-<attribute name="OC_FARNELL" x="-48.26" y="71.12" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="-48.26" y="71.12" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="-48.26" y="71.12" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="SUPPLY1" gate="GND" x="91.44" y="30.48"/>
 <instance part="LED1" gate="G$1" x="66.04" y="73.66">
 <attribute name="OC_FARNELL" x="66.04" y="73.66" size="1.778" layer="96" display="off"/>
@@ -18678,7 +18571,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="MF" x="53.34" y="76.2" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="53.34" y="76.2" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="BAT2" gate="G$1" x="-60.96" y="76.2" rot="R90">
+<instance part="BAT1" gate="G$1" x="-60.96" y="76.2" rot="R90">
 <attribute name="OC_FARNELL" x="-60.96" y="76.2" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="-60.96" y="76.2" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="-60.96" y="76.2" size="1.778" layer="96" display="off"/>
@@ -18742,16 +18635,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="20.32" y="7.62"/>
 </segment>
 <segment>
-<pinref part="BAT1" gate="G$1" pin="-"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="-48.26" y1="60.96" x2="-48.26" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="73.66" x2="-17.78" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="60.96" x2="-35.56" y2="60.96" width="0.1524" layer="91"/>
-<junction x="-48.26" y="60.96"/>
-<pinref part="BAT2" gate="G$1" pin="-"/>
-<wire x1="-35.56" y1="60.96" x2="-48.26" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="BAT1" gate="G$1" pin="-"/>
 <wire x1="-60.96" y1="71.12" x2="-60.96" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="60.96" x2="-48.26" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="60.96" x2="-35.56" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="-35.56" y1="55.88" x2="-35.56" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-35.56" y="60.96"/>
@@ -18873,20 +18762,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="-48.26" y1="91.44" x2="-43.18" y2="91.44" width="0.1524" layer="91"/>
-<junction x="-48.26" y="91.44"/>
-<wire x1="-48.26" y1="78.74" x2="-48.26" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="BAT1" gate="G$1" pin="+1"/>
-<wire x1="-45.72" y1="76.2" x2="-45.72" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="78.74" x2="-48.26" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-48.26" y="78.74"/>
-<wire x1="-50.8" y1="78.74" x2="-48.26" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="BAT1" gate="G$1" pin="+"/>
-<wire x1="-50.8" y1="76.2" x2="-50.8" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
-<pinref part="BAT2" gate="G$1" pin="+"/>
+<pinref part="BAT1" gate="G$1" pin="+"/>
 <wire x1="-60.96" y1="81.28" x2="-60.96" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="91.44" x2="-48.26" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="91.44" x2="-43.18" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="-60.96" y1="96.52" x2="-60.96" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-60.96" y="91.44"/>
