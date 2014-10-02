@@ -349,13 +349,14 @@ UsedLibrary="/Applications/EAGLE-6.5.0/lbr/OtherLibs/ohw-logo.lbr"
 UsedLibrary="/Applications/EAGLE-6.5.0/lbr/Panasonic-Trimmer_Potentiometers@E/Panasonic-Trimmer_Potentiometers.lbr"
 UsedLibrary="sn2032.lbr"
 UsedLibrary="kzh20_lithium_batterie_holder.lbr"
+UsedLibrary="ptc-littlefuse.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="353 22 1193 772"
+Loc="188 22 1804 966"
 State=2
 Number=0
 
 [Desktop]
-Screen="3840 1200"
+Screen="1920 1200"
 Window="Win_1"
