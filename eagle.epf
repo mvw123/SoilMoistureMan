@@ -353,7 +353,7 @@ UsedLibrary="ptc-littlefuse.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="188 22 1804 966"
+Loc="188 22 1334 966"
 State=2
 Number=0
 

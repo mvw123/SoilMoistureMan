@@ -1,23 +1,32 @@
-Soil Moisture Man [WIP - NOT TESTED]
+Soil Moisture Man [WIP]
 ===============
 
-Soil moisture sensor CAD files using Eagle CAD free edition. 
-Simulation files in Simetrix (windows only) http://www.simetrix.co.uk/site/index.html
+WARNING: THIS PROJECT WILL CAUSE ELECTROLYSIS AND SO THE PLATING ON THE LEGS WILL DEGRADE OVER TIME. SOME CONTAMINATION OF THE SOIL WILL OCCUR. DO NOT USE ON EDIBLE PLANTS. 
 
-The Soil Moisture Man is an educational "open source hardware" project which allows you flash warning LEDs when your plants soil becomes dry. 
+The Soil moisture man CAD files are drawn using Eagle CAD free edition. 
+Simulation files are included. These use Simetrix (windows only) http://www.simetrix.co.uk/site/index.html
+
+The Soil Moisture Man is an educational "open source hardware" project which flashes warning LEDs when your plants soil becomes dry. 
 This stops you under-watering and killing your plants. 
 * The device uses standard electronic circuits to measure the resistance of the soil. 
-* transistors and variable resistor test the soil moisture level and switch the circuit on when required
+* Transistors and variable resistor test the soil moisture level and switch the circuit on when required
 * An Astable multivibrator is used to flash the LEDs at a certain frequency and duty cycle. 
+* This is NOT a commercial product and is not suitable for commercial sale. It is to be used solely for educational use. We do not warrant its use in any way shape or form. 
 
-To use the soil moisture man, you need to calibrate the the device to flash its LEDs when your soil becomes dry to the point where it will need watering. 
+To use the soil moisture man, you need to calibrate the device to flash its LEDs when your soil becomes dry to the point where it will need watering. 
 You do this by :- 
 * Select a plant whose soil has just reached the point where it needs watering, but where the soil is not dry or parched.
 * Insert the gold coloured legs into the soil next to a plant, up to the point where the gold flashing on the legs stops. Inserting the device further could damage the circuitry.
 * Turn VR1 until the LEDs just start to flash consistently. 
 
 
-CAD B [WIP - NOT TESTED] 
+CAD C [WIP]
+===========
+
+CAD C is being updated due to some minor issues raised on CAD B which have been raised in github.
+Battery lifetime is being tested. 
+
+CAD B [TESTED - Some issues present] 
 =====
 
 Changed the circuit around from CAD A. 
@@ -25,7 +34,7 @@ The Astable multivibrator is turned on by the soil moisture sensor transistor.
 This saves some small amounts of power and thus increases the battery life.
 BOM parts updated and new VR1 chosen
 
-CAD A [WIP - NOT TESTED] 
+CAD A [FAULTY] 
 =====
 
 Initial schematic release.
