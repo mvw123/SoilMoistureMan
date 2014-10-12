@@ -23,14 +23,14 @@ You do this by :-
 CAD C [WIP]
 ===========
 
-CAD C is being updated due to some minor issues raised on CAD B which have been raised in github.
+CAD C is being updated due to some minor issues on CAD B which have been raised in github.
 Battery lifetime is being tested. 
 
 CAD B [TESTED - Some issues present] 
 =====
 
 Changed the circuit around from CAD A. 
-The Astable multivibrator is turned on by the soil moisture sensor transistor. 
+The Astable multivibrator is now turned on by the soil moisture sensor transistor. 
 This saves some small amounts of power and thus increases the battery life.
 BOM parts updated and new VR1 chosen
 
