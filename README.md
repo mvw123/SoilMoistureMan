@@ -11,13 +11,15 @@ This stops you under-watering and killing your plants.
 * The device uses standard electronic circuits to measure the resistance of the soil. 
 * Transistors and variable resistor test the soil moisture level and switch the circuit on when required
 * An Astable multivibrator is used to flash the LEDs at a certain frequency and duty cycle. 
-* This is NOT a commercial product and is not suitable for commercial sale. It is to be used solely for educational use. We do not warrant its use in any way shape or form. 
+* This is NOT a commercial product and is not suitable for commercial sale. It is to be used solely for educational use. We (i) do not warrant its use in any way shape or form. 
 
 To use the soil moisture man, you need to calibrate the device to flash its LEDs when your soil becomes dry to the point where it will need watering. 
 You do this by :- 
 * Select a plant whose soil has just reached the point where it needs watering, but where the soil is not dry or parched.
 * Insert the gold coloured legs into the soil next to a plant, up to the point where the gold flashing on the legs stops. Inserting the device further could damage the circuitry.
+* IMPORTANT: Press the soil firmly against the legs, so that it makes good contact. Failing to do this will cause the LEDs to flash in error.
 * Turn VR1 until the LEDs just start to flash consistently. 
+* Note that different types of soil have different resistances. If you have a multimeter, its interesting to do take some measurements in different soil types. This project is setup for house plants which usually use a fine soil which has a lower resistance than the soil you would normally find in your back garden. 
 
 
 CAD C [WIP]
