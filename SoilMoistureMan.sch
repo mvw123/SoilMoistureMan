@@ -12103,10 +12103,10 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="MPN" value="SMTU 2032-LF"/>
 <attribute name="OC_FARNELL" value="1216354"/>
 </part>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="150k">
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="100k">
 <attribute name="MF" value="TE CONNECTIVITY"/>
-<attribute name="MPN" value="CRGH0603J150K"/>
-<attribute name="OC_FARNELL" value="2331756"/>
+<attribute name="MPN" value="CRGH0603J100K"/>
+<attribute name="OC_FARNELL" value="2331753"/>
 </part>
 <part name="R2" library="resistor" deviceset="R-EU_" device="R0603" value="1Meg">
 <attribute name="MF" value="TE CONNECTIVITY"/>
